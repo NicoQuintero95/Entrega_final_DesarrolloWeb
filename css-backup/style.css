@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color:black;
+}
+
+/* chek-menu */
+
+#checkbox-menu, label.menu {
+    display: none;
+}
+
+label.menu {
+    font-size: 20.8px;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding: 15px;
+    margin: 10px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.img-principal img{
+    width: 100%;
+    height: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.pie {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    margin: 10px;
+}
+
+.pie a {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.nosotros {
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+	margin-right: 20px;
+	padding: 10px;
+    display: block;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    display: block;
+    justify-content: right;
+}
+
+
+form {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction:column;
+    max-width: 200px;
+}
+
+
+label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.news {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+    }
+    label.menu {
+        display: block;
+        margin-left: 20px;
+    }
+    #checkbox-menu:checked ~ ul {
+        display: block;
+    }
+}
