@@ -63,10 +63,11 @@ label.menu {
             }
         }
     }
-    #checkbox-menu, label.menu {
+        #checkbox-menu, label.menu {
         display: none;
     }
 }
+
 
 .form-contacto {
     font-family: 'Poppins', sans-serif;
@@ -87,11 +88,4 @@ label.menu {
 p {
     font-family: 'Poppins', sans-serif;
     font-size: $fontSizeNormal;
-}
-
-.img-one img {
-    width: 500px;
-    height: 500px;
-    padding: 50px;
-    margin-top: 50px;
 }
