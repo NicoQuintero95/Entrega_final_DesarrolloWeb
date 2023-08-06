@@ -8,6 +8,7 @@
         <title>BARDEN | Basics first</title>
         <!-- bootstrap -->  
         <link rel="stylesheet" href="../css/bootstrap.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -17,9 +18,6 @@
             <section>
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                               <li class="nav-item">
@@ -46,11 +44,15 @@
         <main>
             <h2>Lookbook - AW 2023 - BDN</h2>
             <h3>BLACK AND WHITE - BASICS</h3>
-            <div class="img-lookbook">
-                <img src="../img/HoodieWhiteModeloPaisaje.JPG" class="img-fluid" alt="...">
-                <img src="../img/HoodieBlackModeloPaisaje.JPG" class="img-fluid" alt="...">
-                <img src="../img/LogoMangaHoodie.jpg" class="img-fluid" alt="...">
-                <img src="../img/LogoMangaPequeño.jpg" class="img-fluid" alt="...">
+            <div class="img-one" data-aos="fade-left">
+                <img src="../img/HoodieWhiteModeloPaisaje.JPG" class="img-fluid" alt="HoodieWhitePaisaje">
+            </div>
+            <div class="img-one" data-aos="fade-left">
+                <img src="../img/HoodieBlackModeloPaisaje.JPG" class="img-fluid" alt="HoodieBlackPaisaje">
+            </div>    
+                <img src="../img/LogoMangaHoodie.jpg" class="img-fluid" alt="LogoBarden">
+            <div class="img-one" data-aos="fade-left">
+                <img src="../img/LogoMangaPequeño.jpg" class="img-fluid" alt="LogoBardenManga">
             </div>
         <!-- Inicio Footer -->
         <div class="container">
@@ -67,5 +69,11 @@
         </div>
         <!-- Fin Footer -->
         </main>
+        <script src="./js/popper.js"></script>
+        <script src="./js/bootstrap.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>

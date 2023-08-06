@@ -1,10 +1,11 @@
 @import "reset";
 @import "variables";
+@import "fonts";
 
 header {
     position: sticky;
     top: 0;
-    background-color: white;
+    
     
     .titulo {
         font-family: 'Poppins', sans-serif;
@@ -50,14 +51,14 @@ label.menu {
     ul {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
 
         .nav-item {
             padding: 10px;
             margin: 5px;
             list-style: none;
         &:hover {
-                background-color: gray;
+                background-color: whitesmoke;
                 border-radius: 10px;
             }
         }
@@ -86,4 +87,11 @@ label.menu {
 p {
     font-family: 'Poppins', sans-serif;
     font-size: $fontSizeNormal;
+}
+
+.img-one img {
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    margin-top: 50px;
 }
